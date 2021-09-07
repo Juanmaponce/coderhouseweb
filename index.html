@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,62 +15,47 @@
   </head>
   <body>
     <!-- inicio encabezado -->
-    <div class="container">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <span class="fs-4">SugarBowl</span>
-        </a>
-
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Inicio</a></li>
-          <li class="nav-item"><a href="./pages/panaderia.html" class="nav-link">Pananderia</a></li>
-          <li class="nav-item"><a href="./pages/pasteleria.html" class="nav-link">Pasteleria</a></li>
-          <li class="nav-item"><a href="./pages/about-us.html" class="nav-link">Sobre nosotros</a></li>
-          <li class="nav-item"><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
+    <header class="flex-container">
+      <img src="./assets/img/logo.PNG" class="logo" alt="logo de sugar bowl cocina" />
+      <nav>
+        <ul class="flex-container">
+          <li class="nav-item"><a href="#">Inicio</a></li>
+          <li class="nav-item"><a href="pages/panaderia.html">Panaderia</a></li>
+          <li class="nav-item">
+            <a href="pages/pasteleria.html">Pasteleria</a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/about-us.html">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item"><a href="pages/contacto.html">Contacto</a></li>
         </ul>
-      </header>
-    </div>
+      </nav>
+    </header>
     <!-- fin encabezado -->
     <hr>
     <!-- inicio contenido -->
     <main>
       <!-- titulo -->
-      <section class="container d-flex flex-column align-items-center" >
-        <h1 class="title" style="width: 30%;">SugarBowl</h1>
-        <h3 class="subtitle" style="width: 60%;">Cada día nos superamos para dar lo mejor</h3>
+      <section>
+        <h1 class="title">SugarBowl</h1>
+        <h3 class="subtitle">Cada día nos superamos para dar lo mejor</h3>
       </section>
       <!-- fin titulo -->
       <!-- imagenes -->
-      <section class="container">
-       <div class="row">
-         <div class="col" > 
-           <img class="img-galeria" src="assets/img/torta1-1.jpg" alt="imagen" />
-          </div>
-          <div class="col">
-            <img class="img-galeria" src="assets/img/torta1-2.jpeg" alt="imagen" />
-          </div>
-          <div class="col">
-            <img class="img-galeria" src="assets/img/torta1-3.jpeg" alt="imagen" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img class="img-galeria" src="assets/img/torta2-1.jpeg" alt="imagen" />
-          </div>
-          <div class="col">
-            <img class="img-galeria" src="assets/img/torta2-2.jpeg" alt="imagen" />
-          </div>
-          <div class="col">
-            <img class="img-galeria" src="assets/img/torta2-3.jpeg" alt="imagen" />
-          </div>
-        </div>
+      <section class="grid">
+        <img class="img1 galeria" src="assets/img/torta1-1.jpg" alt="imagen" />
+        <img class="img2 galeria" src="assets/img/torta1-2.jpeg" alt="imagen" />
+        <img class="img3 galeria" src="assets/img/torta1-3.jpeg" alt="imagen" />
+        <img class="img4 galeria" src="assets/img/torta2-1.jpeg" alt="imagen" />
+        <img class="img5 galeria" src="assets/img/torta2-2.jpeg" alt="imagen" />
+        <img class="img6 galeria" src="assets/img/torta2-3.jpeg" alt="imagen" />
       </section>
       <!-- fin imagenes -->
     </main>
     <!-- fin contenido -->
     <hr>
     <!-- inico Footer -->
-    <footer class="d-flex flex-row justify-content-between">
+    <footer class="flex-container footer">
       <img src="./assets/img/logo.PNG" class="logo-footer" alt="logo de sugar bowl cocina" />
       <ul>
         <li><h4>Social</h4></li>
@@ -85,6 +69,5 @@
       </ul>
     </footer>
     <!-- fin Footer -->
-    <script type="text/javascript" src="./dist/js/bootstrap.js"></script>
   </body>
 </html>
