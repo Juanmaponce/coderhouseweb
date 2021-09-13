@@ -4,74 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
     <title>SugarBowl Cocina| Panaderia</title>
   </head>
   <body>
     <!-- inicio encabezado -->
-    <header class="flex-container">
-      <img
-        src="../assets/img/logo.PNG"
-        class="logo"
-        alt="logo de sugar bowl cocina"
-      />
-      <nav>
-        <ul class="flex-container">
-          <li class="nav-item"><a href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a href="#">Panaderia</a></li>
-          <li class="nav-item"><a href="pasteleria.html">Pasteleria</a></li>
-          <li class="nav-item"><a href="about-us.html">Sobre Nosotros</a></li>
-          <li class="nav-item"><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SugarBowl</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page"
+                >Pananderia</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./pasteleria.html" class="nav-link">Pasteleria</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about-us.html" class="nav-link"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./contacto.html" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- fin encabezado -->
-    <hr />
     <!-- inicio contenido -->
     <main>
       <!-- inicio titulo -->
-      <section>
+      <section class="container d-flex flex-column align-items-center">
         <h2 class="title">Panaderia</h2>
       </section>
       <!-- fin titulo -->
       <!-- inicio produtos panaderia -->
-      <section class="productos-container">
-        <div class="flex-container">
-          <img src="../assets/img/pan-de-campo.jpeg" class="producto" alt="pan de campo" />
-          <p>
-            <strong>Pan de campo</strong> casero con una corteza crujiente y una miga super tierna.
-          </p>
+      <section>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <img
+              src="../assets/img/pan-de-campo.jpeg"
+              class="img-galeria"
+              alt="pan de campo"
+            />
+          </div>
+          <div class="col-md-3">
+            <p>
+              <strong>Pan de campo</strong> casero con una corteza crujiente y
+              una miga super tierna.
+            </p>
+          </div>
+          <div class="col-md-3"></div>
         </div>
-        <div class="flex-container">
-          <img src="../assets/img/pan-de-molde.jpeg" class="producto" alt="pan de molde" />
-          <p>
-            <strong>Pan semi integral de molde</strong> con mix de semillas. Sin conservantes ni aditivos, mucho más saludable y digerible
-          </p>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <img
+              src="../assets/img/pan-de-molde.jpeg"
+              class="img-galeria"
+              alt="pan de molde"
+            />
+          </div>
+          <div class="col-md-3">
+            <p>
+              <strong>Pan semi integral de molde</strong> con mix de semillas.
+              Sin conservantes ni aditivos, mucho más saludable y digerible
+            </p>
+          </div>
+          <div class="col-md-3"></div>
         </div>
-        <div class="flex-container">
-          <img src="../assets/img/bagels.jpeg" class="producto" alt="bagels" />
-          <p>
-            <strong>Bagels</strong> Pan con una cubierta crujiente llena de semillas y con un toque dulce. Ideal para comer relleno, ya sea dulce o salado.
-          </p>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <img
+              src="../assets/img/bagels.jpeg"
+              class="img-galeria"
+              alt="bagels"
+            />
+          </div>
+          <div class="col-md-3">
+            <p>
+              <strong>Bagels</strong> Pan con una cubierta crujiente llena de
+              semillas y con un toque dulce. Ideal para comer relleno, ya sea
+              dulce o salado.
+            </p>
+          </div>
+          <div class="col-md-3"></div>
         </div>
       </section>
       <!-- fin productos panaderia -->
     </main>
     <!-- fin contenido -->
-    <hr />
     <!-- inico Footer -->
-    <footer class="flex-container footer">
-      <img
-        src="../assets/img/logo.PNG"
-        class="logo-footer"
-        alt="logo de sugar bowl cocina"
-      />
+    <footer class="d-flex flex-row justify-content-between bg-primary">
+      <img src="../assets/img/logo.PNG" class="logo-footer" alt="logo de sugar bowl cocina" />
       <ul>
         <li><h4>Social</h4></li>
         <li>Twitter</li>
@@ -84,5 +135,6 @@
       </ul>
     </footer>
     <!-- fin Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
 </html>
