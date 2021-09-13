@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
 
@@ -17,66 +17,96 @@
   </head>
   <body>
     <!-- inicio encabezado -->
-    <header class="flex-container">
-      <img
-        src="../assets/img/logo.PNG"
-        class="logo"
-        alt="logo de sugar bowl cocina"
-      />
-      <nav>
-        <ul class="flex-container">
-          <li class="nav-item"><a href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a href="panaderia.html">Panaderia</a></li>
-          <li class="nav-item"><a href="pasteleria.html">Pasteleria</a></li>
-          <li class="nav-item"><a href="#">Sobre Nosotros</a></li>
-          <li class="nav-item"><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SugarBowl</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="./panaderia.html" class="nav-link">Pananderia</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pasteleria.html" class="nav-link">Pasteleria</a>
+            </li>
+            <li class="nav-item active" aria-current="page">
+              <a href="#" class="nav-link">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contacto.html" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- fin encabezado -->
-    <hr />
     <!-- inicio contenido -->
     <main>
       <!-- inicio titulo -->
-      <section>
+      <section class="container d-flex flex-column align-items-center">
         <h1 class="title">SugarBowl</h1>
-        <h3 class="subtitle">Amamos lo que hacemos</h3>
+        <h3 class="title text-center">Amamos lo que hacemos</h3>
       </section>
       <!-- fin titulo -->
       <!--inicio descripcion obre nosotros -->
       <section class="productos-container">
-        <div class="flex-container">
-          <img
-            src="../assets/img/sobre-nostros-1.jpeg"
-            class="sobreNosImg"
-            alt="pastelera prerando una torta"
-          />
-          <p>
-            SugarBowl es un emprendimiento iniciado en 2019 a través de la
-            curiosidad y conocimientos autodidactas. Encabezado por Consu Ponce
-            quien heredó sus primeros conocimientos y el amor por la pastelería
-            de su mamá a lo largo de su vida.
-          </p>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-3">
+            <img
+              src="../assets/img/sobre-nostros-1.jpeg"
+              class="img-galeria"
+              alt="pastelera prerando una torta"
+            />
+          </div>
+          <div class="col-md-5">
+            <p>
+              SugarBowl es un emprendimiento iniciado en 2019 a través de la
+              curiosidad y conocimientos autodidactas. Encabezado por Consu
+              Ponce quien heredó sus primeros conocimientos y el amor por la
+              pastelería de su mamá a lo largo de su vida.
+            </p>
+          </div>
+          <div class="col-md-2"></div>
         </div>
-        <div class="reverse-flex">
-          <img
-            src="../assets/img/sobre-nosotros-2.jpeg"
-            class="sobreNosImg"
-            alt="torta de cumpleaños"
-          />
-          <p>
-            La vida es una suma de momentos irrepetibles. Queremos hacerlos más
-            dulces, más pausados y más vividos. Nuestro objetivo es ofrecer un
-            producto de alta calidad y presentación, pero con el sabor de lo
-            casero y artesanal.
-          </p>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-5">
+            <p>
+              La vida es una suma de momentos irrepetibles. Queremos hacerlos
+              más dulces, más pausados y más vividos. Nuestro objetivo es
+              ofrecer un producto de alta calidad y presentación, pero con el
+              sabor de lo casero y artesanal.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="../assets/img/sobre-nosotros-2.jpeg"
+              class="img-galeria"
+              alt="torta de cumpleaños"
+            />
+          </div>
+          <div class="col-md-2"></div>
         </div>
       </section>
       <!-- fin descripcion sobre nosotros -->
     </main>
     <!-- fin contenido -->
     <!-- inico Footer -->
-    <footer class="flex-container footer">
+    <footer class="d-flex flex-row justify-content-between bg-primary">
       <img
         src="../assets/img/logo.PNG"
         class="logo-footer"
@@ -94,5 +124,10 @@
       </ul>
     </footer>
     <!-- fin Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

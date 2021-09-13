@@ -4,81 +4,127 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
     <title>SugarBowl Cocina| Pasteleria</title>
   </head>
   <body>
     <!-- inicio encabezado -->
-    <header class="flex-container">
-      <img
-        src="../assets/img/logo.PNG"
-        class="logo"
-        alt="logo de sugar bowl cocina"
-      />
-      <nav>
-        <ul class="flex-container">
-          <li class="nav-item"><a href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a href="panaderia.html">Panaderia</a></li>
-          <li class="nav-item"><a href="#">Pasteleria</a></li>
-          <li class="nav-item"><a href="about-us.html">Sobre Nosotros</a></li>
-          <li class="nav-item"><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SugarBowl</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="./panaderia.html" class="nav-link"
+                >Pananderia</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Pasteleria</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about-us.html" class="nav-link">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contacto.html" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- fin encabezado -->
-    <hr />
     <!-- inicio contenido -->
     <main>
       <!-- inicio titulo -->
-      <section>
+      <section class="container d-flex flex-column align-items-center">
         <h2 class="title">Pasteleria</h2>
       </section>
       <!-- fin titulo -->
       <!-- inicio produtos pasteleria -->
-      <section class="productos-container">
-        <div class="flex-container">
-          <img src="../assets/img/pasteleria-1.jpeg" class="producto" alt="torta decorada" />
-          <p>
-            <strong>Tortas cubiertas y decoradas</strong> con buttercream suizo. Hechas con bizcochos esponjosos y humedecidos combinados con distintos rellenos de todos los sabores. 
-
-          </p>
+      <section>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <img
+              src="../assets/img/pasteleria-1.jpeg"
+              class="img-galeria"
+              alt="torta decorada"
+            />
+          </div>
+          <div class="col-md-3">
+            <p>
+              <strong>Tortas cubiertas y decoradas</strong> con buttercream
+              suizo. Hechas con bizcochos esponjosos y humedecidos combinados
+              con distintos rellenos de todos los sabores.
+            </p>
+          </div>
+          <div class="col-md-3"></div>
         </div>
-        <div class="flex-container">
-          <img src="../assets/img/pasteleria-2.jpeg" class="producto" alt="letter cake" />
-          <p>
-            <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing
-            elit. Doloremque asperiores dolores ullam accusamus qui deleniti
-            pariatur, culpa, quibusdam in ut quos fugit. Minus soluta, quasi
-            facilis vel maxime quo eius.
-          </p>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <img
+              src="../assets/img/pasteleria-2.jpeg"
+              class="img-galeria"
+              alt="letter cake"
+            />
+          </div>
+          <div class="col-md-3">
+            <p>
+              <strong>Lorem ipsum</strong> dolor sit amet, consectetur
+              adipisicing elit. Doloremque asperiores dolores ullam accusamus
+              qui deleniti pariatur, culpa, quibusdam in ut quos fugit. Minus
+              soluta, quasi facilis vel maxime quo eius.
+            </p>
+          </div>
+          <div class="col-md-3"></div>
         </div>
-        <div class="flex-container">
-          <img src="../assets/img/pasteleria-3.jpeg" class="producto" alt="mousse de chocolate" />
-          <p>
-            <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing
-            elit. Doloremque asperiores dolores ullam accusamus qui deleniti
-            pariatur, culpa, quibusdam in ut quos fugit. Minus soluta, quasi
-            facilis vel maxime quo eius.
-          </p>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <img
+              src="../assets/img/pasteleria-3.jpeg"
+              class="img-galeria"
+              alt="mousse de chocolate"
+            />
+          </div>
+          <div class="col-md-3">
+            <p>
+              <strong>Lorem ipsum</strong> dolor sit amet, consectetur
+              adipisicing elit. Doloremque asperiores dolores ullam accusamus
+              qui deleniti pariatur, culpa, quibusdam in ut quos fugit. Minus
+              soluta, quasi facilis vel maxime quo eius.
+            </p>
+          </div>
+          <div class="col-md-3"></div>
         </div>
       </section>
       <!-- fin productos pasteleria -->
     </main>
     <!-- fin contenido -->
-    <hr />
     <!-- inico Footer -->
-    <footer class="flex-container footer">
-      <img
-        src="../assets/img/logo.PNG"
-        class="logo-footer"
-        alt="logo de sugar bowl cocina"
-      />
+    <footer class="d-flex flex-row justify-content-between bg-primary">
+      <img src="../assets/img/logo.PNG" class="logo-footer" alt="logo de sugar bowl cocina" />
       <ul>
         <li><h4>Social</h4></li>
         <li>Twitter</li>
@@ -91,5 +137,10 @@
       </ul>
     </footer>
     <!-- fin Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

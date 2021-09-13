@@ -4,58 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="estilo.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
     <title>SugarBowl Cocina| Inicio</title>
   </head>
   <body>
     <!-- inicio encabezado -->
-    <header class="flex-container">
-      <img src="./assets/img/logo.PNG" class="logo" alt="logo de sugar bowl cocina" />
-      <nav>
-        <ul class="flex-container">
-          <li class="nav-item"><a href="#">Inicio</a></li>
-          <li class="nav-item"><a href="pages/panaderia.html">Panaderia</a></li>
-          <li class="nav-item">
-            <a href="pages/pasteleria.html">Pasteleria</a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/about-us.html">Sobre Nosotros</a>
-          </li>
-          <li class="nav-item"><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SugarBowl</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a href="./pages/panaderia.html" class="nav-link">Pananderia</a></li>
+            <li class="nav-item"><a href="./pages/pasteleria.html" class="nav-link">Pasteleria</a></li>
+            <li class="nav-item"><a href="./pages/about-us.html" class="nav-link">Sobre nosotros</a></li>
+            <li class="nav-item"><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- fin encabezado -->
-    <hr>
     <!-- inicio contenido -->
     <main>
       <!-- titulo -->
-      <section>
+      <section class="container d-flex flex-column align-items-center" >
         <h1 class="title">SugarBowl</h1>
-        <h3 class="subtitle">Cada día nos superamos para dar lo mejor</h3>
+        <h3 class="title text-center">Cada día nos superamos para dar lo mejor</h3>
       </section>
       <!-- fin titulo -->
       <!-- imagenes -->
-      <section class="grid">
-        <img class="img1 galeria" src="assets/img/torta1-1.jpg" alt="imagen" />
-        <img class="img2 galeria" src="assets/img/torta1-2.jpeg" alt="imagen" />
-        <img class="img3 galeria" src="assets/img/torta1-3.jpeg" alt="imagen" />
-        <img class="img4 galeria" src="assets/img/torta2-1.jpeg" alt="imagen" />
-        <img class="img5 galeria" src="assets/img/torta2-2.jpeg" alt="imagen" />
-        <img class="img6 galeria" src="assets/img/torta2-3.jpeg" alt="imagen" />
+      <section class="container">
+       <div class="row">
+         <div class="col-md-2"></div>
+         <div class="col-xs-12 col-md-3" > 
+           <img class="img-galeria" src="assets/img/torta1-1.jpg" alt="imagen" />
+          </div>
+          <div class="col-xs-12 col-md-3" > 
+            <img class="img-galeria" src="assets/img/torta1-2.jpeg" alt="imagen" />
+          </div>
+          <div class="col-xs-12 col-md-3" > 
+            <img class="img-galeria" src="assets/img/torta1-3.jpeg" alt="imagen" />
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-xs-12 col-md-3" > 
+            <img class="img-galeria" src="assets/img/torta2-1.jpeg" alt="imagen" />
+          </div>
+          <div class="col-xs-12 col-md-3" > 
+            <img class="img-galeria" src="assets/img/torta2-2.jpeg" alt="imagen" />
+          </div>
+          <div class="col-xs-12 col-md-3" > 
+            <img class="img-galeria" src="assets/img/torta2-3.jpeg" alt="imagen" />
+          </div>
+          <div class="col-md-2"></div>
+        </div>
       </section>
       <!-- fin imagenes -->
     </main>
     <!-- fin contenido -->
-    <hr>
     <!-- inico Footer -->
-    <footer class="flex-container footer">
+    <footer class="d-flex flex-row justify-content-between bg-primary">
       <img src="./assets/img/logo.PNG" class="logo-footer" alt="logo de sugar bowl cocina" />
       <ul>
         <li><h4>Social</h4></li>
@@ -69,5 +89,5 @@
       </ul>
     </footer>
     <!-- fin Footer -->
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>  </body>
 </html>
