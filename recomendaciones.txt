@@ -1,0 +1,10 @@
+Recomendaciones Profesore
+    1. PADING TOP FOOTER SOCIAL Y CONTACTO
+    2. HECHO POR ABAJO
+    3. ANALIZAR EL HOVER
+    4. CENTRAR LAS IMAGENES
+    5. CENTRAR TODOS
+    6. AGREGAR ANIMACIONES!!!!!!!!!!!!!!!!!!!!!!!!
+    7. SACAR LOS LOREM 
+
+

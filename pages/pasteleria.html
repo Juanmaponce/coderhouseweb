@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../estilo.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+    rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/estilo.css" />
     <title>SugarBowl Cocina| Pasteleria</title>
   </head>
   <body>
     <!-- inicio encabezado -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">SugarBowl</a>
+        <a class="navbar-brand" href="../index.html">SugarBowl</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -62,16 +70,16 @@
       <!-- fin titulo -->
       <!-- inicio produtos pasteleria -->
       <section>
-        <div class="row">
+        <div class="row wow fadeIn">
           <div class="col-md-3"></div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <img
               src="../assets/img/pasteleria-1.jpeg"
               class="img-galeria"
               alt="torta decorada"
             />
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <p>
               <strong>Tortas cubiertas y decoradas</strong> con buttercream
               suizo. Hechas con bizcochos esponjosos y humedecidos combinados
@@ -80,40 +88,36 @@
           </div>
           <div class="col-md-3"></div>
         </div>
-        <div class="row">
+        <div class="row wow fadeIn">
           <div class="col-md-3"></div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <img
               src="../assets/img/pasteleria-2.jpeg"
               class="img-galeria"
               alt="letter cake"
             />
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <p>
-              <strong>Lorem ipsum</strong> dolor sit amet, consectetur
-              adipisicing elit. Doloremque asperiores dolores ullam accusamus
-              qui deleniti pariatur, culpa, quibusdam in ut quos fugit. Minus
-              soluta, quasi facilis vel maxime quo eius.
+              <strong>Letter cake</strong> Base de brownie, crema chantilly,
+              dulce de leche y muchos bombones. Con la forma de cualquier número
+              o letra.
             </p>
           </div>
           <div class="col-md-3"></div>
         </div>
-        <div class="row">
+        <div class="row wow fadeIn">
           <div class="col-md-3"></div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <img
               src="../assets/img/pasteleria-3.jpeg"
               class="img-galeria"
               alt="mousse de chocolate"
             />
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <p>
-              <strong>Lorem ipsum</strong> dolor sit amet, consectetur
-              adipisicing elit. Doloremque asperiores dolores ullam accusamus
-              qui deleniti pariatur, culpa, quibusdam in ut quos fugit. Minus
-              soluta, quasi facilis vel maxime quo eius.
+              <strong>Choco Mousse</strong> Base de brownie y mousse de chocolate, decorada con dulce de leche y almendras tostadas 
             </p>
           </div>
           <div class="col-md-3"></div>
@@ -123,28 +127,39 @@
     </main>
     <!-- fin contenido -->
     <!-- inico Footer -->
-    <footer class="container-fluid bg-primary">
+    <footer class="container-fluid bg-primary wow fadeIn">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex justify-content-center">
           <img
             src="../assets/img/logo.PNG"
             class="logo-footer"
             alt="logo de sugar bowl cocina"
           />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 pt-4 d-flex flex-column align-items-center">
+          <h4>Social</h4>
+          <a href="https://www.instagram.com/sugarbowlcocina/" target="_blank">
+            <span class="social">
+              <i class="fab fa-instagram-square fa-3x"></i>
+            </span>
+          </a>
+        </div>
+        <div class="col-md-4 pt-4 d-flex flex-column align-items-center">
+          <h4>Contacto</h4>
           <ul>
-            <li><h4>Social</h4></li>
-            <li>Twitter</li>
-            <li>Facebook</li>
+            <li>Tel: +54 9 2615040579</li>
+            <li>Mail: pedidos@sugarbowl.com</li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <ul>
-            <li><h4>Contacto</h4></li>
-            <li>Tel:</li>
-            <li>Mail:</li>
-          </ul>
+      </div>
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center autor">
+          <span
+            >"Diseño y desarollo:"
+            <a href="https://github.com/Juanmaponce" class="autor"
+              >Juanma Ponce</a
+            >
+          </span>
         </div>
       </div>
     </footer>
@@ -154,5 +169,9 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </body>
 </html>

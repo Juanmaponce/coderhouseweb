@@ -1,0 +1,46 @@
+$theme-colors: (
+  "primary": #d2effd,
+  //   "danger": $danger
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+* {
+  font-family: "Poppins", sans-serif;
+}
+main {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23d2effd' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+.img-galeria {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 5rem;
+}
+.logo-footer {
+  height: 250px;
+  width: 250px;
+}
+
+.title {
+  color: rgb(255, 212, 225);
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.autor {
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.social {
+  text-decoration: none;
+  color: darkgrey;
+}
+.social:hover{
+  color: black;
+}
