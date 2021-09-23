@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilo.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" />
     <title>SugarBowl Cocina| Inicio</title>
   </head>
   <body>
     <!-- inicio encabezado -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">SugarBowl</a>
+        <a class="navbar-brand" href="/">SugarBowl</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -64,84 +72,91 @@
       </section>
       <!-- fin titulo -->
       <!-- imagenes -->
-      <section class="container">
+      <section class="container wow fadeIn">
         <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-xs-12 col-md-3">
+          <div class="col-xs-12 col-md-4 d-flex justify-content-center">
             <img
               class="img-galeria"
               src="assets/img/torta1-1.jpg"
               alt="imagen"
             />
           </div>
-          <div class="col-xs-12 col-md-3">
+          <div class="col-xs-12 col-md-4 d-flex justify-content-center">
             <img
               class="img-galeria"
               src="assets/img/torta1-2.jpeg"
               alt="imagen"
             />
           </div>
-          <div class="col-xs-12 col-md-3">
+          <div class="col-xs-12 col-md-4 d-flex justify-content-center">
             <img
               class="img-galeria"
               src="assets/img/torta1-3.jpeg"
               alt="imagen"
             />
           </div>
-          <div class="col-md-2"></div>
         </div>
         <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-xs-12 col-md-3">
+          <div class="col-xs-12 col-md-4 d-flex justify-content-center">
             <img
               class="img-galeria"
               src="assets/img/torta2-1.jpeg"
               alt="imagen"
             />
           </div>
-          <div class="col-xs-12 col-md-3">
+          <div class="col-xs-12 col-md-4 d-flex justify-content-center">
             <img
               class="img-galeria"
               src="assets/img/torta2-2.jpeg"
               alt="imagen"
             />
           </div>
-          <div class="col-xs-12 col-md-3">
+          <div class="col-xs-12 col-md-4 d-flex justify-content-center">
             <img
               class="img-galeria"
               src="assets/img/torta2-3.jpeg"
               alt="imagen"
             />
           </div>
-          <div class="col-md-2"></div>
         </div>
       </section>
       <!-- fin imagenes -->
     </main>
     <!-- fin contenido -->
     <!-- inico Footer -->
-    <footer class="container-fluid bg-primary">
+    <footer class="container-fluid bg-primary wow fadeIn">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex justify-content-center">
           <img
             src="./assets/img/logo.PNG"
             class="logo-footer"
             alt="logo de sugar bowl cocina"
           />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 pt-4 d-flex flex-column align-items-center">
+          <h4>Social</h4>
+          <a href="https://www.instagram.com/sugarbowlcocina/" target="_blank">
+            <span class="social">
+              <i class="fab fa-instagram-square fa-3x"></i>
+            </span>
+          </a>
+        </div>
+        <div class="col-md-4 pt-4 d-flex flex-column align-items-center">
+          <h4>Contacto</h4>
           <ul>
-            <li><h4>Social</h4></li>
-            <li>Twitter</li>
-            <li>Facebook</li>
+            <li>Tel: +54 9 2615040579</li>
+            <li>Mail: pedidos@sugarbowl.com</li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <ul>
-            <li><h4>Contacto</h4></li>
-            <li>Tel:</li>
-            <li>Mail:</li>
-          </ul>
+      </div>
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center autor">
+          <span
+            >"Diseño y desarollo:"
+            <a href="https://github.com/Juanmaponce" class="autor"
+              >Juanma Ponce</a
+            >
+          </span>
         </div>
       </div>
     </footer>
@@ -151,5 +166,9 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
